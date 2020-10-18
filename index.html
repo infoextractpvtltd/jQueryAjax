@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+<div id="book">Hello, World</div>
+<img src="t1.png" id="docker"/>
+<input type="button" id="click" value="Click"/>
+<script>
+	$(document).ready(function(){
+		$("#docker").draggable();
+		$("#click").click(function(){
+			$("#book").text("Thanks for visiting");
+		});
+	});
+</script>
+</body>
+</html>
